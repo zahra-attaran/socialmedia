@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /socialmedia
+RewriteCond %{REQUEST_URI} !.(css|gif|ico|jpg|js|png|swf|txt)$
+RewriteRule ^(.+)$ index.php [QSA,L]
